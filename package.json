@@ -1,0 +1,29 @@
+{
+  "name": "sthlmjs",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch --verbose",
+    "test:e2e": "cypress open",
+    "lint": "eslint .",
+    "flow": "flow",
+    "status": "yarn flow && yarn lint && yarn test"
+  },
+  "devDependencies": {
+    "@skapa/config": "2.0.0",
+    "@skapa/eslint-config": "1.0.0",
+    "@testing-library/jest-dom": "4.1.0",
+    "@testing-library/react": "9.1.4",
+    "cypress": "3.4.1",
+    "eslint-plugin-cypress": "2.6.1",
+    "flow-bin": "0.107.0",
+    "jest": "24.9.0"
+  },
+  "workspaces": [
+    "web",
+    "api"
+  ]
+}
